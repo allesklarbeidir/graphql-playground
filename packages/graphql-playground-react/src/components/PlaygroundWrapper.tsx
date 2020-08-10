@@ -503,7 +503,7 @@ class PlaygroundWrapper extends React.Component<
 
   private wsEndpointValid(url): Promise<boolean> {
     return new Promise(resolve => {
-      const socket = new WebSocket(url, 'graphql-ws')
+      const socket = new WebSocket(url);
       socket.addEventListener('open', event => {
         socket.send(JSON.stringify({ type: 'connection_init' }))
       })
