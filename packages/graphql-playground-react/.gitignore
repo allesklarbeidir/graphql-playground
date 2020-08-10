@@ -9,7 +9,7 @@ example/yarn.lock
 /coverage
 
 # production
-/build
+# /build # add build to repo so we can use it as cdn
 /dist
 
 # misc
